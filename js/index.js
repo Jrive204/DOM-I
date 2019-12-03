@@ -46,7 +46,13 @@ let navbar = document.querySelectorAll(`nav a`);
 //   a.textContent = siteContent.nav
 // } )
 
-Array.from(navbar);
+// Array.from(navbar);
+
+// const navbar = document.querySelectorAll('a')
+// navbar.forEach((element, i) => {
+//   element.textContent = siteContent['nav'][`nav-item-${i+1}`];
+// });
+
 navbar[0].textContent = siteContent.nav[`nav-item-1`];
 navbar[1].textContent = siteContent.nav[`nav-item-2`];
 navbar[2].textContent = siteContent.nav[`nav-item-3`];
@@ -57,7 +63,13 @@ navbar[5].textContent = siteContent.nav[`nav-item-6`];
 navbar.forEach( a => {
     a.style.color = `green`;
   } );
-// end nav color = green;
+  
+  
+navbar[2].style.color = 'red';
+
+navbar[5].style.color = 'red';
+
+// end nav
 
 
 let appnav = document.createElement(`a`);
@@ -71,13 +83,13 @@ prenav.style.color = `green`;
 const newnav = document.querySelector(`nav`)
 newnav.append(appnav);
 
-
 newnav.prepend(prenav);
 
 //end nav cont
 
 let h1 = document.querySelector("h1");
 h1.textContent = siteContent.cta.h1;
+h1.style.color = `blue`
 
 // end H1 
 
